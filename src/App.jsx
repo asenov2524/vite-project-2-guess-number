@@ -5,11 +5,11 @@ import Button from './components/Button';
 
 function App() {
 
-    const [secretNumber, setSecretNumber] = useState( Math.trunc( Math.random() * 10 ) );
+    const [secretNumber, setSecretNumber] = useState( Math.trunc( Math.random() * 100 ) + 1);
     const secretNumberInfo = secretNumber + ' is the secret number';
   
     function handleNewGame() {
-          setSecretNumber( Math.trunc( Math.random() * 10 ) ); 
+          setSecretNumber( Math.trunc( Math.random() * 100 ) + 1); 
       }
      
     return  (
